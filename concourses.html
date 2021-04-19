@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ФПИ НТС</title>
+  <!--link(rel='icon', href='favicon.ico')-->
+  <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-bg" style="background-image: url(images/page-bg-concourses.jpg);"></div>
+  <div class="over-wrapper">
+    <div id="mobile-indicator"></div>
+    <div id="md-indicator"></div>
+    <header>
+      <div class="header-wrapper">
+        <div class="container">
+          <div class="header-content">
+            <div class="row">
+              <div class="col header-col-1">
+                <div class="header-logo"><a href="#"><img src="images/logo.svg" alt="ФПИ НТС"></a></div>
+              </div>
+              <div class="col header-col-group-r">
+                <div class="row">
+                  <div class="col header-col-2">
+                    <div class="navbar-trigger"><span></span><span></span><span></span></div>
+                    <div class="navbar-wrapper">
+                      <ul class="navbar-nav">
+                        <li><a href="#">О фонде</a></li>
+                        <li><a href="#">Грантовая поддержка</a></li>
+                        <li><a href="#">Конкурсы</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты</a></li>
+                      </ul>
+                      <div class="navbar-contacts">
+                        <div class="header-phone"><a href="tel: +7 (495) 123 45 67">+7 (495) 123-45-67</a></div>
+                        <div class="header-email"><a href="mailto: fond@fpints.ru">fond@fpints.ru</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col header-col-3">
+                    <div class="header-contacts">
+                      <div class="header-phone"><a href="tel: +7 (495) 123 45 67">+7 (495) 123-45-67</a></div>
+                      <div class="header-email"><a href="mailto: fond@fpints.ru">fond@fpints.ru</a></div>
+                    </div>
+                  </div>
+                  <div class="col header-col-4"><a class="btn-header-login" href="#" data-toggle="modal" data-target="#loginModal"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Шапка страницы-->
+      <div class="section section-top">
+        <div class="container">
+          <div class="section-content">
+            <ul class="breadcrumb">
+              <li><a href="#">Главная</a></li>
+              <li><span>Конкурсы</span></li>
+            </ul>
+            <div class="section-top-inner">
+              <div class="section-top-inner-cont">
+                <h1>Конкурсы</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Шапка страницы END-->
+      <div class="page-body">
+        <div class="section section-page-content">
+          <div class="container">
+            <div class="section-content">
+              <div class="con-list con-list-alt">
+                <div class="con-tmb">
+                  <div class="con-tmb-top">
+                    <div class="row">
+                      <div class="col con-top-col-1">
+                        <div class="con-tmb-descr">
+                          <h3><a href="#">ИНФОКОМ-2021-2</a></h3>
+                          <div class="con-tmb-text">
+                            <p>Предоставление субсидий предприятиям по направлению «Информационно-коммуникационные технологии».</p>
+                          </div>
+                          <div class="con-tmb-price">
+                            <div class="con-tmb-price-ttl">
+                              <p>Максимальная субсидия на одного победителя</p>
+                            </div>
+                            <div class="con-tmb-price-val">
+                              <p>5 000 000 ₽</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col con-top-col-2">
+                        <div class="con-timetable">
+                          <div class="con-timetable-item">
+                            <div class="con-timetable-item-descr">
+                              <p>Начало приема заявок Участников</p>
+                            </div>
+                            <div class="con-timetable-item-date">
+                              <p>14.05.2021</p>
+                            </div>
+                          </div>
+                          <div class="con-timetable-item">
+                            <div class="con-timetable-item-descr">
+                              <p>Окончание приема заявок Участников:</p>
+                            </div>
+                            <div class="con-timetable-item-date">
+                              <p>15.06.2021</p>
+                            </div>
+                          </div>
+                          <div class="con-timetable-item">
+                            <div class="con-timetable-item-descr">
+                              <p>Подведение итогов конкурса:</p>
+                            </div>
+                            <div class="con-timetable-item-date">
+                              <p>28.06.2021</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="con-tmb-bottom">
+                    <div class="row">
+                      <div class="col con-bottom-col-1">
+                        <div class="doc-list">
+                          <div class="row">
+                            <div class="col"><a class="doc-tmb" href="#">
+                                <div class="doc-tmb-ico doc-tmb-ico-pdf">
+                                  <p>PDF</p>
+                                </div>
+                                <div class="doc-tmb-text"><span>Условия проведения конкурса</span></div></a></div>
+                            <div class="col"><a class="doc-tmb" href="#">
+                                <div class="doc-tmb-ico doc-tmb-ico-pdf">
+                                  <p>PDF</p>
+                                </div>
+                                <div class="doc-tmb-text"><span>Форма подачи заявки</span></div></a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col con-bottom-col-2">
+                        <div class="con-tmb-button"><a class="btn btn-3" href="#">Подать заявку</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="con-tmb">
+                  <div class="con-tmb-top">
+                    <div class="row">
+                      <div class="col con-top-col-1">
+                        <div class="con-tmb-descr">
+                          <h3><a href="#">Биомед 2021</a></h3>
+                          <div class="con-tmb-text">
+                            <p>Предоставление субсидий предприятиям по направлению «Информационно-коммуникационные технологии».</p>
+                          </div>
+                          <div class="con-tmb-price">
+                            <div class="con-tmb-price-ttl">
+                              <p>Максимальная субсидия на одного победителя</p>
+                            </div>
+                            <div class="con-tmb-price-val">
+                              <p>5 000 000 ₽</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col con-top-col-2">
+                        <div class="con-timetable">
+                          <div class="con-timetable-item">
+                            <div class="con-timetable-item-descr">
+                              <p>Начало приема заявок Участников</p>
+                            </div>
+                            <div class="con-timetable-item-date">
+                              <p>14.05.2021</p>
+                            </div>
+                          </div>
+                          <div class="con-timetable-item">
+                            <div class="con-timetable-item-descr">
+                              <p>Окончание приема заявок Участников:</p>
+                            </div>
+                            <div class="con-timetable-item-date">
+                              <p>15.06.2021</p>
+                            </div>
+                          </div>
+                          <div class="con-timetable-item">
+                            <div class="con-timetable-item-descr">
+                              <p>Подведение итогов конкурса:</p>
+                            </div>
+                            <div class="con-timetable-item-date">
+                              <p>28.06.2021</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="con-tmb-bottom">
+                    <div class="row">
+                      <div class="col con-bottom-col-1">
+                        <div class="doc-list">
+                          <div class="row">
+                            <div class="col"><a class="doc-tmb" href="#">
+                                <div class="doc-tmb-ico doc-tmb-ico-pdf">
+                                  <p>PDF</p>
+                                </div>
+                                <div class="doc-tmb-text"><span>Условия проведения конкурса</span></div></a></div>
+                            <div class="col"><a class="doc-tmb" href="#">
+                                <div class="doc-tmb-ico doc-tmb-ico-pdf">
+                                  <p>PDF</p>
+                                </div>
+                                <div class="doc-tmb-text"><span>Форма подачи заявки</span></div></a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col con-bottom-col-2">
+                        <div class="con-tmb-button"><a class="btn btn-3" href="#">Подать заявку</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="con-tmb">
+                  <div class="con-tmb-top">
+                    <div class="row">
+                      <div class="col con-top-col-1">
+                        <div class="con-tmb-descr">
+                          <h3><a href="#">ИНФОКОМ-2021-2</a></h3>
+                          <div class="con-tmb-text">
+                            <p>Предоставление субсидий предприятиям по направлению «Информационно-коммуникационные технологии».</p>
+                          </div>
+                          <div class="con-tmb-price">
+                            <div class="con-tmb-price-ttl">
+                              <p>Максимальная субсидия на одного победителя</p>
+                            </div>
+                            <div class="con-tmb-price-val">
+                              <p>5 000 000 ₽</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col con-top-col-2">
+                        <div class="con-timetable">
+                          <div class="con-timetable-item">
+                            <div class="con-timetable-item-descr">
+                              <p>Начало приема заявок Участников</p>
+                            </div>
+                            <div class="con-timetable-item-date">
+                              <p>14.05.2021</p>
+                            </div>
+                          </div>
+                          <div class="con-timetable-item">
+                            <div class="con-timetable-item-descr">
+                              <p>Окончание приема заявок Участников:</p>
+                            </div>
+                            <div class="con-timetable-item-date">
+                              <p>15.06.2021</p>
+                            </div>
+                          </div>
+                          <div class="con-timetable-item">
+                            <div class="con-timetable-item-descr">
+                              <p>Подведение итогов конкурса:</p>
+                            </div>
+                            <div class="con-timetable-item-date">
+                              <p>28.06.2021</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="con-tmb-bottom">
+                    <div class="row">
+                      <div class="col con-bottom-col-1">
+                        <div class="doc-list">
+                          <div class="row">
+                            <div class="col"><a class="doc-tmb" href="#">
+                                <div class="doc-tmb-ico doc-tmb-ico-pdf">
+                                  <p>PDF</p>
+                                </div>
+                                <div class="doc-tmb-text"><span>Условия проведения конкурса</span></div></a></div>
+                            <div class="col"><a class="doc-tmb" href="#">
+                                <div class="doc-tmb-ico doc-tmb-ico-pdf">
+                                  <p>PDF</p>
+                                </div>
+                                <div class="doc-tmb-text"><span>Форма подачи заявки</span></div></a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col con-bottom-col-2">
+                        <div class="con-tmb-button"><a class="btn btn-3" href="#">Подать заявку</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-content-inner">
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+                <div class="col footer-col-1">
+                  <div class="footer-logo"><a href="#"><img src="images/logo.svg" alt="ФПИ НТС"></a></div>
+                  <div class="footer-copy">
+                    <p>&copy;&nbsp;Фонд поддержки инноваций в&nbsp;Научно-технической сфере, 2021.</p>
+                    <p>Все права защищены.</p>
+                  </div>
+                  <div class="footer-dev-wrapper"><a class="footer-dev" href="https://paradigma-digital.ru">
+                      <div class="footer-dev-logo"><img class="svg-inline" src="images/logo-paradigma.svg"></div>
+                      <div class="footer-dev-text">
+                        <p>Разработка &mdash; Paradigma</p>
+                      </div></a></div>
+                </div>
+                <div class="col footer-col-2">
+                  <ul class="footer-menu">
+                    <li><a href="#">О фонде</a></li>
+                    <li><a href="#">Грантовая поддержка</a></li>
+                    <li><a href="#">Конкурсы</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="col footer-col-3">
+                  <div class="footer-contacts">
+                    <div class="footer-phone"><a href="tel:+7 (495) 123-45-67">+7 (495) 123-45-67</a></div>
+                    <div class="footer-email"><a href="mailto: fond@fpints.ru">fond@fpints.ru</a></div>
+                    <div class="footer-soclinks">
+                      <div class="row">
+                        <div class="col"><a class="footer-soclink" href="#"><img class="svg-inline" src="images/footer-instagram.svg"></a></div>
+                        <div class="col"><a class="footer-soclink" href="#"><img class="svg-inline" src="images/footer-fb.svg"></a></div>
+                        <div class="col"><a class="footer-soclink" href="#"><img class="svg-inline" src="images/footer-vk.svg"></a></div>
+                      </div>
+                    </div>
+                    <div class="footer-button"><a class="btn btn-2" href="#">Предложить проект</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal fade side-modal" id="vacancyModal" tabindex="-1">
+      <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-content-inner">
+            <div class="modal-header">
+              <h2>Откликнуться на&nbsp;вакансию</h2>
+            </div>
+            <div class="modal-body">
+              <div class="vacancy-form">
+                <form>
+                  <h3>Личные данные</h3>
+                  <div class="row">
+                    <div class="col form-col-1-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_lastname">Фамилия</label>
+                        <input type="text" name="vacancy_lastname" id="vacancy_lastname" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-1-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_name">Имя</label>
+                        <input type="text" name="vacancy_name" id="vacancy_name" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-1-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_patro">Отчество</label>
+                        <input type="text" name="vacancy_patro" id="vacancy_patro" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-1-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_birthyear">Год рождения</label>
+                        <input class="year-input" type="text" name="vacancy_birthyear" id="vacancy_birthyear" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-2-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_citizenship">Гражданство</label>
+                        <input type="text" name="vacancy_citizenship" id="vacancy_citizenship" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-3-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_address">Место фактического проживания (нас. пункт, район)</label>
+                        <textarea class="textarea-autogrow" type="text" name="vacancy_address" id="vacancy_address" rows="1" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col form-col-3-3">
+                      <div class="form-file">
+                        <input type="file" name="vacancy_photo" id="vacancy_photo" data-label="Прикрепить фото">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hr"></div>
+                  <h3>Контактные данные</h3>
+                  <div class="row">
+                    <div class="col form-col-1-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_phone">Телефон</label>
+                        <input class="input-phone" type="text" name="vacancy_phone" id="vacancy_phone" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-2-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_email">E-mail</label>
+                        <input type="email" name="vacancy_email" id="vacancy_email" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hr"></div>
+                  <h3>Образование</h3>
+                  <div class="row">
+                    <div class="col form-col-2-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_education">Уровень образования</label>
+                        <select name="vacancy_education" id="vacancy_education" required>
+                          <option value="" disabled selected></option>
+                          <option vaule="1">Среднее</option>
+                          <option vaule="2">Среднее специальное</option>
+                          <option vaule="3">Высшее</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col form-col-2-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_school">Учебное заведение</label>
+                        <input type="text" name="vacancy_school" id="vacancy_school" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-1-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_school_year">Год окончания</label>
+                        <input class="input-year" type="text" name="vacancy_school_year" id="vacancy_school_year" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-2-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_faculty">Факультет</label>
+                        <input type="text" name="vacancy_faculty" id="vacancy_faculty">
+                      </div>
+                    </div>
+                    <div class="col form-col-2-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_speciality">Специальность</label>
+                        <input type="text" name="vacancy_speciality" id="vacancy_speciality">
+                      </div>
+                    </div>
+                    <div class="col form-col-2-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_grade">Ученая степень (если имеется)</label>
+                        <input type="text" name="vacancy_grade" id="vacancy_grade">
+                      </div>
+                    </div>
+                    <div class="col form-col-3-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_education_extra">Дополнительное образование, повышение квалицикации, курсы (если имеется)</label>
+                        <textarea class="textarea-autogrow" type="text" name="vacancy_education_extra" id="vacancy_education_extra" rows="1" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col form-col-2-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_english">Уровень владения английским</label>
+                        <select name="vacancy_english" id="vacancy_english">
+                          <option value="" disabled selected></option>
+                          <option vaule="1">Низкий</option>
+                          <option vaule="2">Средний</option>
+                          <option vaule="3">Хороший</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hr"></div>
+                  <h3>Опыт работы</h3>
+                  <div class="row">
+                    <div class="col form-col-3-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_exp">Предыдущий опыт работы (Задачи, профессиональные достижения)</label>
+                        <textarea class="textarea-autogrow" type="text" name="vacancy_exp" id="vacancy_exp" rows="1" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col form-col-3-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_skills">Ключевые знания и навыки</label>
+                        <textarea class="textarea-autogrow" type="text" name="vacancy_skills" id="vacancy_skills" rows="1" required></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hr"></div>
+                  <h3>Дополнительная информация</h3>
+                  <div class="row">
+                    <div class="col form-col-2-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_family">Семейное положение</label>
+                        <select name="vacancy_family" id="vacancy_family">
+                          <option value="" disabled selected></option>
+                          <option vaule="1">Низкий</option>
+                          <option vaule="2">Средний</option>
+                          <option vaule="3">Хороший</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col form-col-2-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_children">Количество детей</label>
+                        <input class="input-numeric" type="text" name="vacancy_children" id="vacancy_children">
+                      </div>
+                    </div>
+                    <div class="col form-col-2-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_alcohol">Отношение к алкоголю</label>
+                        <select name="vacancy_alcohol" id="vacancy_alcohol">
+                          <option value="" disabled selected></option>
+                          <option vaule="1">Низкий</option>
+                          <option vaule="2">Средний</option>
+                          <option vaule="3">Хороший</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col form-col-2-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_smoking">Отношение к курению</label>
+                        <select name="vacancy_smoking" id="vacancy_smoking">
+                          <option value="" disabled selected></option>
+                          <option vaule="1">Низкий</option>
+                          <option vaule="2">Средний</option>
+                          <option vaule="3">Хороший</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col form-col-3-3">
+                      <div class="form-group">
+                        <label class="placeholder" for="vacancy_extra">Дополнительная информация</label>
+                        <textarea class="textarea-autogrow" type="text" name="vacancy_extra" id="vacancy_extra" rows="1" required></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <input class="btn btn-1 btn-1-alt" type="submit" value="Отправить заявку">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade form-modal" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-content-inner">
+            <div class="modal-header">
+              <h2>Вход</h2>
+            </div>
+            <div class="modal-body">
+              <div class="login-form">
+                <form>
+                  <div class="row">
+                    <div class="col form-col-1-2">
+                      <div class="form-group">
+                        <label class="placeholder" for="login_lastname">Фамилия</label>
+                        <input type="text" name="login_lastname" id="login_lastname" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-1-2">
+                      <div class="form-group">
+                        <label class="placeholder" for="login_name">Имя</label>
+                        <input type="text" name="login_name" id="login_name" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-1-2">
+                      <div class="form-group">
+                        <label class="placeholder" for="login_patro">Отчество</label>
+                        <input type="text" name="login_patro" id="login_patro" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-1-2">
+                      <div class="form-group">
+                        <label class="placeholder" for="login_password">Пароль</label>
+                        <input type="password" name="login_password" id="login_password" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-1-2">
+                      <div class="form-footer">
+                        <input class="btn btn-1 btn-1-alt" type="submit" value="Войти">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade form-modal" id="successModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header">
+            <div class="h2"><span>Ваша заявка успешно принята!</span></div>
+          </div>
+          <div class="modal-body">
+            <div class="text">
+              <p>Перезвоним в течение 15 минут</p>
+            </div>
+            <div class="success-modal-button">
+              <button class="btn btn-1 btn-1-alt" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/additional-methods.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wNumb.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/greensock/TweenMax.min.js"></script>
+    <script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+    <script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+    <script src="js/iscroll-probe.js"></script>
+    <script src="js/scrollmagic/ScrollMagic.min.js"></script>
+    <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/main.js"></script>
+  </div>
+</body>
