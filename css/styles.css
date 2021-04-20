@@ -780,21 +780,44 @@ ul.breadcrumb > li {
   left: 0;
   top: 5px; }
 
+.section-top-footer {
+  margin: 36px 0;
+  padding: 50px 0 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2); }
+
+.section-top-footer .row {
+  -ms-flex-align: center;
+  align-items: center; }
+
+.section-top-footer .col {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; }
+
 .section-top-vacancy-info {
   font-size: 16px;
-  margin: 38px 0 0 0; }
+  margin: 38px 0 0 0;
+  margin: 39px -15px 0 -15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.section-top-vacancy-info-item {
+  padding: 0 15px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin: 0 0 6px 0; }
 
 .section-top-vacancy-info p {
-  margin: 0 0 7px 0; }
+  margin: 0 0 0 0; }
 
 .section-top-vacancy-info span {
   color: #667695; }
 
-.section-top-button {
-  margin: 42px 0 0 0; }
-
 .section-top-button .btn {
-  min-width: 300px; }
+  width: 100%; }
 
 .section-page-content {
   background: #fff;
@@ -1175,6 +1198,16 @@ ul.footer-menu a:focus {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.struct-item-line-r:before {
+  content: "";
+  height: 2px;
+  width: 30px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-left: 2px; }
 
 .struct-item-line-b:before {
   content: "";
@@ -1610,13 +1643,14 @@ a + .h3 {
 .con-tmb h3 a,
 .con-tmb .h3 a {
   border-bottom: 1px solid #0D3076;
-  transition: all .3s ease;
+  transition: all .2s ease;
   color: #000 !important;
   text-decoration: none !important; }
 
 .con-tmb h3 a:hover,
 .con-tmb .h3 a:hover {
-  border-bottom-color: transparent; }
+  border-bottom-color: transparent;
+  color: #2C57AB !important; }
 
 .con-tmb-text {
   font-weight: 500;
@@ -1705,6 +1739,9 @@ a + .h3 {
   -ms-flex-align: center;
   align-items: center; }
 
+.doc-tmb:hover {
+  color: #0D3076 !important; }
+
 .doc-tmb-ico {
   -ms-flex: 0 0 31px;
   flex: 0 0 31px;
@@ -1717,7 +1754,16 @@ a + .h3 {
   text-align: center;
   width: 31px;
   height: 39px;
-  padding: 6px 0 0 0; }
+  padding: 6px 0 0 0;
+  transition: all .2s ease;
+  color: #0D3076; }
+
+.doc-tmb:hover .doc-tmb-ico {
+  color: #fff; }
+
+.doc-tmb-ico p {
+  position: relative;
+  z-index: 10; }
 
 .doc-tmb-ico:before {
   content: "";
@@ -1726,7 +1772,25 @@ a + .h3 {
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  transition: all .2s ease; }
+
+.doc-tmb-ico:after {
+  content: "";
+  background: url(../images/doc-tmb-ico-hover.svg) 0 0 no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: all .2s ease;
+  opacity: 0; }
+
+.doc-tmb:hover .doc-tmb-ico:before {
+  opacity: 0; }
+
+.doc-tmb:hover .doc-tmb-ico:after {
+  opacity: 1; }
 
 .doc-tmb-text {
   -ms-flex-positive: 1;
@@ -2052,6 +2116,9 @@ a.all-link:focus {
   padding: 25px 0 0 0; }
 
 .navbar-contacts {
+  display: none; }
+
+.navbar-logo {
   display: none; }
 
 .form-col-1-3 {
@@ -2773,7 +2840,9 @@ div.dropdown-menu {
   .contacts-map {
     margin-left: -19px; }
   .struct-item-line-b:before {
-    margin-left: 49px; } }
+    margin-left: 49px; }
+  .struct-item-line-r:before {
+    width: 18px; } }
 
 @media (max-width: 991px) {
   #md-indicator {
@@ -3171,7 +3240,7 @@ div.dropdown-menu {
     transform-origin: left center; }
   .section-top-vacancy-info {
     font-size: 15px;
-    margin: 23px 0 0 0; }
+    margin-top: 23px; }
   .section-top-button .btn {
     min-width: 0; }
   .section-page-content {
@@ -3359,7 +3428,9 @@ div.dropdown-menu {
   .struct-item-big {
     max-width: 100%;
     font-size: 13px;
-    min-height: 50px; }
+    min-height: 94px; }
+  .struct-item-line-r:after {
+    display: none; }
   .struct-item-arrow-l:after {
     width: 30px;
     background-position: 0 0; }
@@ -3589,6 +3660,26 @@ div.dropdown-menu {
   .form-modal .modal-dialog {
     padding: 10px 50px 10px 10px; }
   .form-modal .modal-content {
-    padding: 20px 15px; } }
+    padding: 20px 15px; }
+  body.menu-open {
+    overflow: hidden; }
+  .navbar-logo {
+    display: block;
+    margin: 0 0 30px 0; }
+  .navbar-logo img {
+    width: 114px; }
+  .section-top-vacancy-info-item {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  .section-top-footer {
+    margin: 30px 0 0 0;
+    padding: 30px 0 0 0; }
+  .section-top-footer .col {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  .section-top-button {
+    margin: 30px 0 0 0; } }
 
 /*# sourceMappingURL=styles.css.map */

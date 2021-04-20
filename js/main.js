@@ -1104,8 +1104,12 @@ $(document).ready(function() {
 
 function validateForms() {
 	$('.textarea-autogrow').autogrow();
-	$("input.input-phone").mask("+7 (999) 999-99-99");
-	$("input.input-year").mask("9999");
+	$("input.input-phone").inputmask("+7 (999) 999-99-99", {
+		showMaskOnHover: false
+	});
+	$("input.input-year").inputmask("9999", {
+		showMaskOnHover: false
+	});
 	jQuery.validator.addClassRules('phone-email-group', {
 		require_from_group: [1, ".phone-email-group"]
 	});
