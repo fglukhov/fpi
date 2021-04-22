@@ -2121,6 +2121,14 @@ a.all-link:focus {
 .navbar-logo {
   display: none; }
 
+.header-logo img {
+  max-width: 100%; }
+
+.contacts-map > ymaps,
+.contacts-map > ymaps > ymaps,
+.contacts-map > ymaps > ymaps > ymaps {
+  height: 100% !important; }
+
 .form-col-1-3 {
   -ms-flex: 0 0 33.3333%;
   flex: 0 0 33.3333%;
