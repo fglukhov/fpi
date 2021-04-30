@@ -46,64 +46,12 @@ var baseUrl = "";
 
 $(document).ready(function() {
 
-	// Zones slider
+	$("body").on("click", "[data-target='#orderModal']", function () {
 
-	$(".zones-tabs-item").click(function () {
-
-		var curTab = $(this);
-
-		if ($(".zones-descr-slider").hasClass("slick-initialized") && $(".zones-pic-slider").hasClass("slick-initialized")) {
-
-			$(".zones-descr-slider, .zones-pic-slider").slick("slickGoTo", curTab.prevAll().length);
-
-			$(".zones-tabs-item").removeClass("active");
-
-			curTab.addClass("active");
-
-		}
+		$("#order_type").val($(this).closest(".con-tmb").find("h3 a").text());
 
 	});
 
-	// Zones slider END
-
-	// Main nav
-
-	$(".section-top-home").on("mousemove", function (e) {
-
-		var contRelativeMousePos = (e.pageX -	$(".main-nav-wrapper .container").offset().left) / $(".main-nav-wrapper .container").outerWidth();
-
-		if (contRelativeMousePos < 0) {
-			contRelativeMousePos = 0;
-		}
-
-		if (contRelativeMousePos > 1) {
-			contRelativeMousePos = 1;
-		}
-
-		TweenMax.to($(".main-nav"), 0.5, {
-
-			x: ($(".main-nav-wrapper .container").width() - $(".main-nav").outerWidth()) * contRelativeMousePos
-
-		});
-
-	});
-
-	$(".main-nav-link").on("mouseover", function () {
-
-		var curLink = $(this);
-
-		$(".main-pic-slider .slide").removeClass("active");
-
-		$(".main-pic-slider .slide").filter(function () {
-
-			return $(this).prevAll().length == curLink.closest(".main-nav-item").prevAll(".main-nav-item").length;
-
-		}).addClass("active");
-
-
-	});
-
-	// Main nav END
 
 	// Gallery expandable
 
@@ -1449,19 +1397,11 @@ function quiz() {
 	//
 	// });
 
-	$(".form-checkboxes-required input[type=checkbox]").each(function () {
+	if ($(".poll-form").length) {
 
-		if (!$(this).closest(".form-checkboxes-required").find(":checked").length) {
+		var pollTimerStart = Date.now();
 
-			$(this).closest(".form-checkboxes-required").addClass("error");
-
-		} else {
-
-			$(this).closest(".form-checkboxes-required").removeClass("error");
-
-		}
-
-	});
+	}
 
 	$(".form-checkboxes-required input[type=checkbox]").change(function () {
 
@@ -1500,14 +1440,62 @@ function quiz() {
 		}
 
 
-		if ($(".poll-form-step.current").nextAll(".active").length == 1) {
 
-			// btnFwd.hide();
-			// btnSubmit.show();
+		$(".poll-form-step.current .form-checkboxes-required input[type=checkbox]").each(function () {
 
-		}
+			if (!$(this).closest(".form-checkboxes-required").find(":checked").length) {
+
+				$(this).closest(".form-checkboxes-required").addClass("error");
+
+			} else {
+
+				$(this).closest(".form-checkboxes-required").removeClass("error");
+
+			}
+
+		});
 
 		if ($(".poll-form-step.current").nextAll(".active").length && !$(".poll-form-step.current .error").length) {
+
+			if ($(".poll-form-step.current").prevAll(".active").length) {
+
+				pollStepStart = $(".poll-form-step.current").prev(".active").attr("data-end");
+
+			} else {
+
+				pollStepStart = pollTimerStart;
+
+			}
+
+			var pollStepTime = Date.now() - pollStepStart;
+
+			$(".poll-form-step.current").attr("data-end", Date.now()).attr("data-time", pollStepTime);
+
+			if ($(".poll-form-step.current").nextAll(".active").length == 1) {
+
+				// Время выполнения теста
+
+				var pollTotalTime = Date.now() - pollTimerStart;
+
+				console.log("Время теста: " + pollTotalTime);
+
+				// btnFwd.hide();
+				// btnSubmit.show();
+
+				// Массив с временами ответа на вопросы
+
+				var timesArr = new Array();
+
+				$(".poll-form-step").not(".last").each(function () {
+
+					timesArr.push($(this).attr("data-time"));
+
+				});
+
+				console.log(timesArr);
+
+			}
+
 
 			var curStep = $(".poll-form-step.current");
 
@@ -1518,6 +1506,8 @@ function quiz() {
 			$(".poll-wrapper .btn-back").attr("disabled",false);
 
 			quizDots();
+
+
 
 		}
 

@@ -205,7 +205,7 @@
                         <div class="col"><a class="footer-soclink" href="#"><img class="svg-inline" src="images/footer-vk.svg"></a></div>
                       </div>
                     </div>
-                    <div class="footer-button"><a class="btn btn-2" href="#">Предложить проект</a></div>
+                    <div class="footer-button"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#projectModal">Предложить проект</a></div>
                   </div>
                 </div>
               </div>
@@ -436,24 +436,15 @@
             </div>
             <div class="modal-body">
               <div class="login-form">
+                <div class="message-error">
+                  <p>Неверный логин или пароль</p>
+                </div>
                 <form>
                   <div class="row">
                     <div class="col form-col-1-2">
                       <div class="form-group">
-                        <label class="placeholder" for="login_lastname">Фамилия</label>
-                        <input type="text" name="login_lastname" id="login_lastname" required>
-                      </div>
-                    </div>
-                    <div class="col form-col-1-2">
-                      <div class="form-group">
-                        <label class="placeholder" for="login_name">Имя</label>
-                        <input type="text" name="login_name" id="login_name" required>
-                      </div>
-                    </div>
-                    <div class="col form-col-1-2">
-                      <div class="form-group">
-                        <label class="placeholder" for="login_patro">Отчество</label>
-                        <input type="text" name="login_patro" id="login_patro" required>
+                        <label class="placeholder" for="login_email">E-mail</label>
+                        <input type="email" name="login_email" id="login_email" required>
                       </div>
                     </div>
                     <div class="col form-col-1-2">
@@ -465,6 +456,106 @@
                     <div class="col form-col-1-2">
                       <div class="form-footer">
                         <input class="btn btn-1 btn-1-alt" type="submit" value="Войти">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade form-modal" id="orderModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-content-inner">
+            <div class="modal-header">
+              <h2>Подать заявку</h2>
+            </div>
+            <div class="modal-body">
+              <div class="order-form">
+                <form>
+                  <input type="hidden" id="order_type" name="order_type">
+                  <div class="row">
+                    <div class="col form-col-1-2">
+                      <div class="form-group">
+                        <label class="placeholder" for="order_name">Имя</label>
+                        <input type="text" name="order_name" id="order_name" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-1-2">
+                      <div class="form-group">
+                        <label class="placeholder" for="order_phone">Телефон</label>
+                        <input class="input-phone" type="text" name="order_phone" id="order_phone" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-wide">
+                      <div class="form-group">
+                        <label class="placeholder" for="order_company">Компания</label>
+                        <input type="text" name="order_company" id="order_company">
+                      </div>
+                    </div>
+                    <div class="col form-col-1-2">
+                      <div class="form-footer">
+                        <input class="btn btn-1 btn-1-alt" type="submit" value="Отправить">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade form-modal" id="projectModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-content-inner">
+            <div class="modal-header">
+              <h2>Предложить проект</h2>
+            </div>
+            <div class="modal-body">
+              <div class="project-form">
+                <form>
+                  <input type="hidden" id="project_type" name="project_type">
+                  <div class="row">
+                    <div class="col form-col-1-2">
+                      <div class="form-group">
+                        <label class="placeholder" for="project_name">Имя</label>
+                        <input type="text" name="project_name" id="project_name" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-1-2">
+                      <div class="form-group">
+                        <label class="placeholder" for="project_phone">Телефон</label>
+                        <input class="input-phone" type="text" name="project_phone" id="project_phone" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-1-2">
+                      <div class="form-group">
+                        <label class="placeholder" for="project_email">E-mail</label>
+                        <input type="email" name="project_email" id="project_email" required>
+                      </div>
+                    </div>
+                    <div class="col form-col-1-2">
+                      <div class="form-group">
+                        <label class="placeholder" for="project_company">Компания</label>
+                        <input type="text" name="project_company" id="project_company">
+                      </div>
+                    </div>
+                    <div class="col form-col-wide">
+                      <div class="form-group">
+                        <label class="placeholder" for="project_message">Описание проекта</label>
+                        <textarea name="project_message" id="project_message"></textarea>
+                      </div>
+                    </div>
+                    <div class="col form-col-1-2">
+                      <div class="form-footer">
+                        <input class="btn btn-1 btn-1-alt" type="submit" value="Отправить">
                       </div>
                     </div>
                   </div>

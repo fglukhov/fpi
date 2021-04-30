@@ -2129,6 +2129,15 @@ a.all-link:focus {
 .contacts-map > ymaps > ymaps > ymaps {
   height: 100% !important; }
 
+.message-error {
+  color: #E44A59;
+  margin: 0 0 20px 0; }
+
+.form-col-wide {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
 .form-col-1-3 {
   -ms-flex: 0 0 33.3333%;
   flex: 0 0 33.3333%;
@@ -2355,11 +2364,11 @@ input[type=radio]:checked + label:before {
 
 input[type=checkbox] + label:before {
   content: "";
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 2px;
   background-color: #fff;
   transition: all .1s ease;
   background-image: url(../images/checkbox.svg);
@@ -2369,7 +2378,8 @@ input[type=checkbox] + label:before {
   border: 1px solid #2C57AB; }
 
 input[type=checkbox]:checked + label:before {
-  background-size: 13px 13px; }
+  background-size: 10px 8px;
+  background-color: #2C57AB; }
 
 .form-checkboxes-small input[type=checkbox] + label {
   font-size: 14px; }
@@ -2754,6 +2764,9 @@ div.dropdown-menu {
 .vacancy-form .form-footer .btn {
   width: 350px; }
 
+.form-checkboxes-required.error input + label {
+  color: #E44A59 !important; }
+
 #md-indicator {
   display: none; }
 
@@ -3119,9 +3132,10 @@ div.dropdown-menu {
   input[type=radio] + label {
     font-size: 16px;
     padding: 0 0 0 40px; }
-  input[type=radio] + label:before,
-  input[type=checkbox] + label:before {
+  input[type=radio] + label:before {
     top: -2px; }
+  input[type=checkbox] + label:before {
+    top: 0; }
   .poll-form-step h3, .poll-form-step .h3 {
     font-size: 22px; }
   .label-pic {
